@@ -104,7 +104,7 @@ To enable fair comparison, we ran three trials for both Gelato-30B-A3B and GTA1-
 
 We manually identified 19 tasks where the evaluation function is incomprehensive or the task specification is ambiguous. For each task, we review all agent trajectories and determine whether the task was successfully completed. With human evaluation corrections, Gelato-30B-A3B achieves **61.66 ± 0.63%** success rate compared to the automated evaluation result of **58.71 ± 0.66%**. Similarly, GTA1-32B achieves **59.37 ± 1.15%** success rate with human evaluation compared to **56.97 ± 1.47%** on automated evaluation.
 
-See [evaluation/osworld-human-evals.md](evaluation/osworld-human-evals.md) for detailed results. This is not a comprehensive manual evaluation, we identified clearly problematic that were also easy to check.
+See [evaluation/osworld-human-evals.md](evaluation/osworld-human-evals.md) for detailed results. This is not a comprehensive manual evaluation, we identified clearly problematic tasks that were also easy to check.
 
 ## Team
 
