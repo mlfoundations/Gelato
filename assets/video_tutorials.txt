@@ -1,0 +1,85 @@
+3ds Max
+ANSYS
+Abaqus
+Adobe Acrobat
+Adobe After Effects
+Adobe Dreamweaver
+Adobe Illustrator
+Adobe InDesign
+Adobe Premiere
+Adobe Lightroom
+Adobe Photoshop
+Airmail
+Altium Designer
+Android Studio
+Apple Mail
+Asana
+Atom
+AutoCAD
+Autodesk Eagle
+Autodesk Inventor
+Autodesk Maya
+Autodesk Revit
+Avid Media Composer
+Axure
+Balsamiq
+Blender
+Brave
+Burp Suite
+Catia
+COMSOL
+Cadence Virtuoso
+Cinema4D
+Confluence
+CryEngine
+Cubase
+DBeaver
+DaVinci Resolve
+FL Studio
+Figma
+Final Cut Pro
+Framer
+Fusion 360
+GIMP
+GameMaker
+IBM SPSS
+Intel Quartus Prime
+IntelliJ IDEA
+Jupyter
+KiCad
+LabVIEW
+LibreOffice Base
+LibreOffice Calc
+LibreOffice Draw
+LibreOffice Impress
+LibreOffice Math
+LibreOffice Writer
+Logic Pro X
+Looker
+MATLAB
+Mailbird
+Microsoft Edge
+OneNote
+Outlook
+Power BI
+ModelSim
+Mozilla Firefox
+Thunderbird
+Notion
+OBS
+Obsidian
+OriginLab
+PyCharm
+RStudio
+Quartus
+VMWare
+Stata
+Eviews
+Vivado
+Unreal Engine
+SolidWorks
+Simulink
+Unity
+VLC Media Player
+Xcode
+Tableau
