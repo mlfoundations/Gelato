@@ -5,7 +5,7 @@
 ![Figure 1: Gelato-30B-A3B](assets/gelato-fig1.png)  
 > **Figure 1:** 🍨 Gelato-30B-A3B outperforms the SoTA specialized computer grounding model, GTA1-32B, and larger VLMs on the ScreenSpot-Pro and OS-World-G grounding benchmarks.
 
-We are releasing [**🍨 Gelato-30B-A3B**](https://huggingface.co/mlfoundations/Gelato-30B-A3B), a state-of-the-art grounding model for GUI computer-use tasks! Gelato is trained on our open-sourced [**🖱️ Click-100k**](https://huggingface.co/datasets/mlfoundations/Click-100k) dataset and achieves **63.88% accuracy on ScreenSpot-Pro**<sup>[[3](#ref-screenspot-pro)]</sup> and **69.15% / 74.65% on OS-World-G / OS-World-G (Refined)**<sup>[[4](#ref-jedi)]</sup>, surpassing prior specialized computer grounding models like GTA1-32B <sup>[[5](#ref-gta1)]</sup> and much larger VLMs including Qwen3-VL-235B-A22B-Instruct <sup>[[10](#ref-qwen3vl)]</sup>. When combined with GPT-5, Gelato enables strong agentic performance at **58.71 ± 0.66%** automated success rate (**61.66 ± 0.63%** with human evaluation) vs. **56.97 ± 1.47%** (**59.37 ± 1.15%** with human evaluation) for GTA1-32B on OS-World.
+We are releasing [**🍨 Gelato-30B-A3B**](https://huggingface.co/mlfoundations/Gelato-30B-A3B), a state-of-the-art grounding model for GUI computer-use tasks! Gelato is trained on our open-sourced [**🖱️ Click-100k**](https://huggingface.co/datasets/mlfoundations/Click-100k) dataset and achieves **63.88% accuracy on ScreenSpot-Pro**<sup>[[3](#ref-screenspot-pro)]</sup> and **69.15% / 74.65% on OS-World-G / OS-World-G (Refined)**<sup>[[4](#ref-jedi)]</sup>, surpassing prior specialized computer grounding models like GTA1-32B <sup>[[5](#ref-gta1)]</sup> and much larger VLMs including Qwen3-VL-235B-A22B-Instruct <sup>[[10](#ref-qwen3vl)]</sup>. When combined with GPT-5, Gelato enables strong agentic performance at **58.71%** automated success rate (**61.85%** with human evaluation) vs. **56.97%** (**59.47%** with human evaluation) for GTA1-32B on OS-World.
 
 ## Building the Click-100k Dataset
 
@@ -96,13 +96,13 @@ We found that many of the issues discussed in the [EpochAI article critiquing OS
   <img src="assets/gelato-fig7.png" alt="Figure 7: OS-World Agent Performance" width="950"/>
 </p>
 
-> **Figure 7:** OS-World agent performance across three runs with GPT-5 planner. Automated evaluation underestimates performance due to incomplete task specifications. Human evaluation shows 🍨 Gelato-30B-A3B achieves **61.66 ± 0.63%** success rate vs. GTA1-32B's **59.37 ± 1.15%**.
+> **Figure 7:** OS-World agent performance across three runs with GPT-5 planner. Automated evaluation underestimates performance due to incomplete task specifications. Human evaluation shows 🍨 Gelato-30B-A3B achieves **61.85%** success rate vs. GTA1-32B's **59.47%**.
 
 To enable fair comparison, we ran three trials for both Gelato-30B-A3B and GTA1-32B in the same agent harness. The experiments were conducted in a [fixed snapshot of OS-World](https://github.com/xlang-ai/OSWorld/tree/ddb8372a6cbb51a29583cc1c0fe8c090e61219b7). Gelato-30B-A3B achieves **58.71 ± 0.66% success rate** on OS-World automated evaluation, performing on par or above GTA1-32B (**56.97 ± 1.47%** success rate). We provide all of our agent's OS-World trajectories at [mlfoundations/gelato-osworld-agent-trajectories](https://huggingface.co/datasets/mlfoundations/gelato-osworld-agent-trajectories).
 
 ### Human Evaluation
 
-We manually identified 19 tasks where the evaluation function is incomprehensive or the task specification is ambiguous. For each task, we review all agent trajectories and determine whether the task was successfully completed. With human evaluation corrections, Gelato-30B-A3B achieves **61.66 ± 0.63%** success rate compared to the automated evaluation result of **58.71 ± 0.66%**. Similarly, GTA1-32B achieves **59.37 ± 1.15%** success rate with human evaluation compared to **56.97 ± 1.47%** on automated evaluation.
+We manually identified 20 tasks where the evaluation function is incomprehensive or the task specification is ambiguous. For each task, we review all agent trajectories and determine whether the task was successfully completed. With human evaluation corrections, Gelato-30B-A3B achieves **61.85 ± 0.79%** success rate compared to the automated evaluation result of **58.71 ± 0.66%**. Similarly, GTA1-32B achieves **59.47 ± 1.27%** success rate with human evaluation compared to **56.97 ± 1.47%** on automated evaluation.
 
 See [evaluation/osworld-human-evals.md](evaluation/osworld-human-evals.md) for detailed results. This is not a comprehensive manual evaluation, we identified clearly problematic tasks that were also easy to check.
 
