@@ -8,7 +8,7 @@ This report summarizes all tasks that were corrected from reward 0 (failed) to n
 
 ### run_1
 
-**Total corrections:** 13
+**Total corrections:** 14
 
 | Task ID | App | Original Reward | New Reward | Notes |
 |---------|-----|-----------------|------------|-------|
@@ -25,6 +25,7 @@ This report summarizes all tasks that were corrected from reward 0 (failed) to n
 | `fc6d8143-9452-4171-9459-7f515143419a` | chrome | 0 | 1 | - |
 | `841b50aa-df53-47bd-a73a-22d3a9f73160` | libreoffice_impress | 0 | 1 | - |
 | `d06f0d4d-2cd5-4ede-8de9-598629438c6e` | vlc | 0 | 1 | The agent downloaded a dark-theme skin from the internet and successfully set it as the VLC media player’s default. The volume slider is black and overall the design is in a dark color scheme. |
+| `e2dd0213-26db-4349-abe5-d5667bfd725c` | gimp | 0 | 1 | Task asks agent to move a centered text box to the left without specifying how much the offset should be. Agent moves the text box but not as much as where the evaluation function expects it to be. |
 
 ### run_2
 
@@ -46,7 +47,7 @@ This report summarizes all tasks that were corrected from reward 0 (failed) to n
 
 ### run_3
 
-**Total corrections:** 9
+**Total corrections:** 10
 
 | Task ID | App | Original Reward | New Reward | Notes |
 |---------|-----|-----------------|------------|-------|
@@ -59,7 +60,7 @@ This report summarizes all tasks that were corrected from reward 0 (failed) to n
 | `121ba48f-9e17-48ce-9bc6-a4fb17a7ebba` | chrome | 0 | 1 | Agent successfully added Dota 2 all DLC to cart. Even though two DLCs are listed, only one actually shows up in the cart (maybe because the other is free?). When I do the same in the steam store, I get the same result. The agent further opened the cart to verify. There was an SSL error and it pressed reload to successfully view the cart. Then it terminated. |
 | `b4f95342-463e-4179-8c3f-193cd7241fb2` | chrome | 0 | 1 | - |
 | `fc6d8143-9452-4171-9459-7f515143419a` | chrome | 0 | 1 | - |
-
+| `e2dd0213-26db-4349-abe5-d5667bfd725c` | gimp | 0 | 1 | Task asks agent to move a centered text box to the left without specifying how much the offset should be. Agent moves the text box but not as much as where the evaluation function expects it to be. |
 ---
 
 ## gta1-32b_baseline
@@ -98,7 +99,7 @@ This report summarizes all tasks that were corrected from reward 0 (failed) to n
 
 ### run_3
 
-**Total corrections:** 8
+**Total corrections:** 9
 
 | Task ID | App | Original Reward | New Reward | Notes |
 |---------|-----|-----------------|------------|-------|
@@ -110,14 +111,14 @@ This report summarizes all tasks that were corrected from reward 0 (failed) to n
 | `9f935cce-0a9f-435f-8007-817732bfc0a5` | chrome | 0 | 1 | - |
 | `fc6d8143-9452-4171-9459-7f515143419a` | chrome | 0 | 1 | - |
 | `d06f0d4d-2cd5-4ede-8de9-598629438c6e` | vlc | 0 | 1 | The agent downloaded a dark-theme skin from the internet and successfully set it as the VLC media player's default. The volume slider is black and overall the design is in a dark color scheme. |
-
+| `e2dd0213-26db-4349-abe5-d5667bfd725c` | gimp | 0 | 1 | Task asks agent to move a centered text box to the left without specifying how much the offset should be. Agent moves the text box but not as much as where the evaluation function expects it to be. |
 ---
 
 ## All Corrected Tasks
 
 The following tasks were corrected in at least one model/trial.
 
-**Total unique tasks corrected:** 19
+**Total unique tasks corrected:** 20
 
 ```
 06fe7178-4491-4589-810f-2e2bc9502122
@@ -139,4 +140,5 @@ d06f0d4d-2cd5-4ede-8de9-598629438c6e
 da46d875-6b82-4681-9284-653b0c7ae241
 f0b971a1-6831-4b9b-a50e-22a6e47f45ba
 fc6d8143-9452-4171-9459-7f515143419a
+e2dd0213-26db-4349-abe5-d5667bfd725c
 ```
