@@ -1,6 +1,6 @@
 # Gelato-30B-A3B Per-Step Evaluations
 
-We evaluate Gelato-30B-A3B per-step on the Screenspot-Pro and OS-World-G benchmarks. You can access all Gelato-30B-A3B checkpoints at the [Gelato-dev](https://huggingface.co/collections/gelato-dev/gelato-30b-a3b-checkpoints) collection. Refer to the [MODEL_CARD.md](../MODEL_CARD.md) for more details on how to inference the Gelato-30B-A3B model. All benchmarks are run with a maximum of 10 megapixel frames. The results are shown in the table below.
+We evaluate Gelato-30B-A3B per-step on the Screenspot-Pro and OS-World-G benchmarks. You can access all Gelato-30B-A3B checkpoints at the [Gelato-dev](https://huggingface.co/collections/gelato-dev/gelato-30b-a3b-checkpoints) collection. Refer to [Gelato-30B-A3B](https://huggingface.co/mlfoundations/Gelato-30B-A3B) for more details on how to run inference. All benchmarks are run with a maximum of 10 megapixel frames. The results are shown in the table below.
 
 | Step | Screenspot-Pro Accuracy | OS-World-G Accuracy | OS-World-G (Refined) Accuracy | Average |
 |------|-------------------------|----------------------|-------------------------------|---------|
